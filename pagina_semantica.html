@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Blog Personal</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 900px; margin: 2rem auto; line-height: 1.5; padding: 0 1rem; }
+    header, nav, main, aside, footer, article, section { padding: 12px; border: 1px solid #ddd; margin-bottom: 12px; }
+    nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 8px; flex-wrap: wrap; }
+    nav a { text-decoration: none; }
+    .label { font-weight: bold; }
+    time { color: #666; }
+    blockquote { margin: 0; padding-left: 1rem; border-left: 4px solid #ddd; font-style: italic; }
+    address { font-style: normal; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi Blog Personal</h1>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Artículos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <article>
+      <header>
+        <h2>Novedades de HTML5</h2>
+        <p>Publicado el <time datetime="2024-12-20">20/12/2024</time></p>
+      </header>
+
+      <p>HTML5 trae nuevas etiquetas <em>muy interesantes</em> para mejorar la web.</p>
+
+      <blockquote cite="https://en.wikipedia.org/wiki/On_Writing:_A_Memoir_of_the_Craft">
+        <p><q cite="https://en.wikipedia.org/wiki/On_Writing:_A_Memoir_of_the_Craft">a uniquely portable magic</q> — <cite>Stephen King</cite></p>
+      </blockquote>
+
+      <p><span class="label">URL:</span>
+        <a href="https://www.example.com" rel="noopener">https://www.example.com</a>
+      </p>
+
+      <p>Visita a la <abbr title="World Health Organization">WHO</abbr> para más información.</p>
+
+      <footer>
+        <p>Etiquetas: <span class="label">HTML</span>, <span class="label">Semántica</span></p>
+      </footer>
+    </article>
+  </main>
+
+  <aside aria-label="Información lateral">
+    <section aria-labelledby="sobre-mi">
+      <h2 id="sobre-mi">Acerca de</h2>
+      <p>Desarrollador web y escritor ocasional.</p>
+    </section>
+
+    <section aria-labelledby="contacto">
+      <h2 id="contacto">Contacto</h2>
+      <address>
+        <span class="label">Email:</span>
+        <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
+      </address>
+    </section>
+  </aside>
+
+  <footer>
+    <p>© <time datetime="2025">2025</time> Mi Sitio</p>
+    <p>Hecho con <em>café</em> y paciencia.</p>
+  </footer>
+</body>
+</html>
